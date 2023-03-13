@@ -123,16 +123,16 @@
           },
         },
         color: {
-          value: ["#FFFFFF", "#FFFFFF", "#FFFFFF"],
+          value: ["#dbc34e", "#C5B521", "#dbc34e"],
         },
         shape: {
-          type: "circle",
+          type: "polygon",
           stroke: {
             width: 0,
             color: "#fff",
           },
           polygon: {
-            nb_sides: 5,
+            nb_sides: 6,
           },
           image: {
             src: "img/github.svg",
@@ -235,16 +235,16 @@
           },
         },
         color: {
-          value: ["#FFFFFF", "#FFFFFF", "#FFFFFF"],
+          value: ["#dbc34e", "#C5B521", "#dbc34e"],
         },
         shape: {
-          type: "circle",
+          type: "polygon",
           stroke: {
             width: 0,
             color: "#fff",
           },
           polygon: {
-            nb_sides: 5,
+            nb_sides: 6,
           },
           image: {
             src: "img/github.svg",
