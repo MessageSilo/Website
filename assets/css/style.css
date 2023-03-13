@@ -11,6 +11,7 @@
   COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: normal;
@@ -47,7 +48,7 @@ button:focus,
   text-decoration: none;
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 a:focus,
@@ -150,8 +151,8 @@ p {
   z-index: 5;
   -webkit-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
-  background: -webkit-gradient(linear, left top, right top, from(#33c8c1), color-stop(50%, #119bd2), to(#33c8c1));
-  background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#dbc34e), color-stop(50%, #C5B521), to(#dbc34e));
+  background: linear-gradient(to right, #dbc34e 0%, #C5B521 50%, #dbc34e 100%);
   background-size: 200%;
 }
 
@@ -169,8 +170,8 @@ p {
 
 /*===== All Section Title Style =====*/
 .section-title .line {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fe8464), to(#fe6e9a));
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#dbc34e), to(#C5B521));
+  background: linear-gradient(#dbc34e 0%, #C5B521 100%);
   width: 150px;
   height: 5px;
   margin-bottom: 10px !important;
@@ -282,7 +283,7 @@ p {
 
 .preloader .loader .spinner-circle {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   width: 200%;
   height: 100%;
@@ -329,30 +330,37 @@ p {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
   }
+
   25% {
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
   }
+
   37.5% {
     -webkit-transform: rotate(405deg);
     transform: rotate(405deg);
   }
+
   50% {
     -webkit-transform: rotate(540deg);
     transform: rotate(540deg);
   }
+
   62.5% {
     -webkit-transform: rotate(675deg);
     transform: rotate(675deg);
   }
+
   75% {
     -webkit-transform: rotate(810deg);
     transform: rotate(810deg);
   }
+
   87.5% {
     -webkit-transform: rotate(945deg);
     transform: rotate(945deg);
   }
+
   to {
     -webkit-transform: rotate(1080deg);
     transform: rotate(1080deg);
@@ -364,30 +372,37 @@ p {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
   }
+
   25% {
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
   }
+
   37.5% {
     -webkit-transform: rotate(405deg);
     transform: rotate(405deg);
   }
+
   50% {
     -webkit-transform: rotate(540deg);
     transform: rotate(540deg);
   }
+
   62.5% {
     -webkit-transform: rotate(675deg);
     transform: rotate(675deg);
   }
+
   75% {
     -webkit-transform: rotate(810deg);
     transform: rotate(810deg);
   }
+
   87.5% {
     -webkit-transform: rotate(945deg);
     transform: rotate(945deg);
   }
+
   to {
     -webkit-transform: rotate(1080deg);
     transform: rotate(1080deg);
@@ -399,10 +414,12 @@ p {
     -webkit-transform: rotate(130deg);
     transform: rotate(130deg);
   }
+
   50% {
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
+
   to {
     -webkit-transform: rotate(130deg);
     transform: rotate(130deg);
@@ -414,10 +431,12 @@ p {
     -webkit-transform: rotate(130deg);
     transform: rotate(130deg);
   }
+
   50% {
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
+
   to {
     -webkit-transform: rotate(130deg);
     transform: rotate(130deg);
@@ -429,10 +448,12 @@ p {
     -webkit-transform: rotate(-130deg);
     transform: rotate(-130deg);
   }
+
   50% {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
+
   to {
     -webkit-transform: rotate(-130deg);
     transform: rotate(-130deg);
@@ -444,10 +465,12 @@ p {
     -webkit-transform: rotate(-130deg);
     transform: rotate(-130deg);
   }
+
   50% {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
+
   to {
     -webkit-transform: rotate(-130deg);
     transform: rotate(-130deg);
@@ -465,23 +488,32 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 
+.navbar-area .logo-text {
+  color: white;
+}
+
 .sticky {
   position: fixed;
   z-index: 99;
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 
+.sticky .logo-text {
+  color: black;
+}
+
 .sticky .navbar {
   padding: 10px 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .sticky .navbar {
     padding: 15px 0;
   }
@@ -530,7 +562,8 @@ p {
   top: -7px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -544,7 +577,8 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .navbar-nav {
     padding: 20px 30px;
   }
@@ -561,7 +595,8 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .navbar-nav .nav-item {
     margin: 0;
   }
@@ -578,7 +613,8 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .navbar-nav .nav-item a {
     display: inline-block;
     padding: 8px 0;
@@ -586,11 +622,13 @@ p {
   }
 }
 
-.navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
-  color: #fe7a7b;
+.navbar-nav .nav-item a:hover,
+.navbar-nav .nav-item a.active {
+  color: #C5B521;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .navbar-btn {
     position: absolute;
     top: 50%;
@@ -602,8 +640,8 @@ p {
 
 .navbar-btn .main-btn {
   line-height: 45px;
-  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#dbc34e), color-stop(50%, #C5B521), to(#dbc34e));
+  background: linear-gradient(to right, #dbc34e 0%, #C5B521 50%, #dbc34e 100%);
   background-size: 200%;
 }
 
@@ -620,8 +658,9 @@ p {
   color: #2E2E2E;
 }
 
-.sticky .navbar-nav .nav-item a.active, .sticky .navbar-nav .nav-item a:hover {
-  color: #fe7a7b;
+.sticky .navbar-nav .nav-item a.active,
+.sticky .navbar-nav .nav-item a:hover {
+  color: #C5B521;
 }
 
 /*===== HEADER HERO =====*/
@@ -757,7 +796,7 @@ p {
 .single-logo img {
   max-width: 100%;
   -webkit-filter: grayscale(5);
-          filter: grayscale(5);
+  filter: grayscale(5);
   opacity: 0.5;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
@@ -766,7 +805,7 @@ p {
 .single-logo:hover img {
   opacity: 1;
   -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 /*===========================
@@ -855,7 +894,7 @@ p {
   margin-top: 30px;
   font-size: 16px;
   font-weight: 400;
-  color: #fe7a7b;
+  color: #C5B521;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -871,7 +910,7 @@ p {
 }
 
 .single-services:hover {
-  border-color: #fe7a7b;
+  border-color: #C5B521;
 }
 
 .single-services:hover .services-icon .shape {
@@ -934,8 +973,8 @@ p {
 }
 
 .about-content .main-btn {
-  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#dbc34e), color-stop(50%, #C5B521), to(#dbc34e));
+  background: linear-gradient(to right, #dbc34e 0%, #C5B521 50%, #dbc34e 100%);
   background-size: 200%;
   height: 50px;
   line-height: 50px;
@@ -997,7 +1036,7 @@ p {
   text-align: center;
   border-radius: 50%;
   background-color: #fff;
-  color: #fe8464;
+  color: #dbc34e;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1009,7 +1048,9 @@ p {
   padding-left: 70px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .counter-wrapper {
     padding-left: 0;
   }
@@ -1070,16 +1111,11 @@ p {
 }
 
 .counter-wrapper .single-counter.counter-color-1::before {
-  background: -webkit-gradient(linear, left top, left bottom, from(#33c8c1), to(#119bd2));
-  background: linear-gradient(#33c8c1 0%, #119bd2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#dbc34e), to(#C5B521));
+  background: linear-gradient(#dbc34e 0%, #C5B521 100%);
 }
 
 .counter-wrapper .single-counter.counter-color-2::before {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fe8464), to(#fe6e9a));
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
-}
-
-.counter-wrapper .single-counter.counter-color-3::before {
   background: -webkit-gradient(linear, left top, left bottom, from(#361cc1), to(#2e82ef));
   background: linear-gradient(#361cc1 0%, #2e82ef 100%);
 }
@@ -1218,8 +1254,8 @@ p {
   border-bottom-right-radius: 5px;
   height: 65px;
   line-height: 65px;
-  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#dbc34e), color-stop(50%, #C5B521), to(#dbc34e));
+  background: linear-gradient(to right, #dbc34e 0%, #C5B521 50%, #dbc34e 100%);
   background-size: 200%;
 }
 
@@ -1316,7 +1352,7 @@ p {
 }
 
 .footer-about .social li a:hover {
-  color: #fe8464;
+  color: #dbc34e;
 }
 
 .footer-title .title {
@@ -1335,7 +1371,8 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .link-wrapper {
     padding: 0;
     padding-right: 50px;
@@ -1358,7 +1395,7 @@ p {
 }
 
 .link-wrapper .link li a:hover {
-  color: #fe8464;
+  color: #dbc34e;
 }
 
 .footer-contact .contact {
@@ -1394,7 +1431,7 @@ p {
 }
 
 .copyright-content a:hover {
-  color: #fe8464;
+  color: #dbc34e;
 }
 
 /*===== BACK TO TOP =====*/
@@ -1407,8 +1444,8 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#dbc34e), color-stop(50%, #C5B521), to(#dbc34e));
+  background: linear-gradient(to right, #dbc34e 0%, #C5B521 50%, #dbc34e 100%);
   background-size: 200%;
   text-align: center;
   z-index: 99;
@@ -1416,11 +1453,11 @@ p {
   transition: all 0.3s ease-out 0s;
   display: none;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .back-to-top:hover {
