@@ -1,0 +1,41 @@
+.radius {
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  .gradient-border-bg {
+    border: 5px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(to bottom,#00D9D0 , #0081FF) 1;
+    padding: 11rem 3rem 0 3rem;
+    background: rgba(0,129,255,11%);
+    height: 35rem;
+    width: 100%;
+    text-align: center;
+    line-height: 172%;
+    
+    
+    
+
+    h2{
+        font-size: 3.2rem;
+        line-height: 130%;
+        margin-bottom: 1rem;
+    }
+    
+    img{
+        width: 12rem;
+        top: -7rem;
+        left: 50%;
+        position: absolute;
+        margin: 1rem 0 3rem 0;
+        transform: translateX(-50%)
+    }
+    
+  }
+  
+
+  
+
+
