@@ -1,215 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Message Silo - Clean up the mess of messages!</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="nav.js" defer></script>
-  </head>
-  <body>
-    <header class="primary-header flex">
-      <img class="navbar-logo" src="./img/logo.png" alt="" />
 
-      <button
-        class="mobile-nav-toggle"
-        aria-controls="primary-navigation"
-        aria-expanded="false"
-      >
-        
-      </button>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WWB88X9DS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      <nav class="flex">
-        <ul aria-hidden="false" data-visible="false" id="primary-navigation" class="primary-navigation flex">
-          <li><a class="menu-link" href="">Home</a></li>
-          <li><a class="menu-link" href="">Why</a></li>
-          <li><a class="menu-link" href="">Features</a></li>
-          <li><a class="menu-link" href="">Find Us</a></li>
-        </ul>
-      </nav>
-    </header>
+    gtag('config', 'G-1WWB88X9DS');
+  </script>
 
-    <section class="hero">
-      <div class="hero__container">
-        <div class="hero__left">
-          <h3>Message Silo</h3>
-          <h1>Clean up the mess of <span class="colored">messages</span></h1>
-          <p>
-            A tool to fix or enrich messages with the power of AI, and make
-            integration simpler for event-driven systems
-          </p>
-          <button class="btn btn--primary">Get Started</button>
-        </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <div class="hero__right">
-          <img class="hero__right__img" src="./img/cubes.png" alt="" />
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:url" content="https://www.message-silo.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Message Silo - Cleanup the mess of messages">
+  <meta property="og:title" content="Message Silo - Cleanup the mess of messages">
+  <meta property="og:description"
+    content="A platform to auto-correct your dead-lettered messages and make integration simpler for event-driven systems. Azure Service Bus, AWS SQS, RabbitMQ, ...">
+  <meta property="og:image" itemprop="image" content="https://www.message-silo.dev/img/logo.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:domain" content="www.message-silo.dev">
+  <meta property="twitter:url" content="https://www.message-silo.dev/">
+  <meta name="twitter:title" content="Message Silo - Cleanup the mess of messages">
+  <meta name="twitter:description"
+    content="A platform to auto-correct your dead-lettered messages and make integration simpler for event-driven systems. Azure Service Bus, AWS SQS, RabbitMQ, ...">
+  <meta name="twitter:image" content="https://www.message-silo.dev/img/logo.png">
+  <meta data-rh="true" name="twitter:image:alt" content="Message Silo Logo">
+  <meta name="twitter:site" content="@berkid89">
+  <meta name="twitter:creator" content="@berkid89">
+  <meta name="twitter:creator:id" content="berkid89">
+
+  <!--====== Title ======-->
+  <title>Message Silo - Cleanup the mess of messages</title>
+
+  <meta name="description"
+    content="A platform to auto-correct your dead-lettered messages and make integration simpler for event-driven systems. Azure Service Bus, AWS SQS, RabbitMQ, ..." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="nav.js" defer></script>
+</head>
+
+<body>
+  <header class="primary-header flex">
+    <img class="navbar-logo" src="./img/logo.png" alt="" />
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+
+    </button>
+
+    <nav class="flex">
+      <ul aria-hidden="false" data-visible="false" id="primary-navigation" class="primary-navigation flex">
+        <li><a class="menu-link" href="">Home</a></li>
+        <li><a class="menu-link" href="">Why</a></li>
+        <li><a class="menu-link" href="">Features</a></li>
+        <li><a class="menu-link" href="">Find Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__left">
+        <h3>Message Silo</h3>
+        <h1>Clean up the mess of <span class="colored">messages</span></h1>
+        <p>
+          A tool to fix or enrich messages with the power of AI, and make
+          integration simpler for event-driven systems
+        </p>
+        <button class="btn btn--primary">Get Started</button>
+      </div>
+
+      <div class="hero__right">
+        <img class="hero__right__img" src="./img/cubes.png" alt="" />
+      </div>
+    </div>
+    <div class="div-line div-line--hero"></div>
+  </section>
+
+  <div class="divider">
+    <div class="divider__wrapper">
+      <div class="service-container service-container--1">
+        <img src="./img/service-bus.svg" alt="" />
+        <h3>Azure Service Bus</h3>
+      </div>
+      <div class="service-container service-container--2">
+        <img src="./img/rabbitmq.svg" alt="" />
+        <h3>RabbitMQ</h3>
+      </div>
+      <div class="service-container service-container--3">
+        <img src="./img/aws-sqs.svg" alt="" />
+        <h3>AWS SQS</h3>
+      </div>
+    </div>
+  </div>
+
+  <main class="section__main">
+    <p class="message">
+      <span class="message--colored">Created for developers</span> who need to
+      handle special cases of dead-lettered messages in different
+      message-brokers
+    </p>
+    <div class="card__container">
+      <div class="radius">
+        <div class="card gradient-border-bg">
+          <img src="./img/card-icon-1.svg" alt="" />
+          <div class="card-content">
+            <h2>Simple</h2>
+            <p>
+              You can control your message processing with a unified
+              configuration.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="div-line div-line--hero"></div>
-    </section>
-
-    <div class="divider">
-      <div class="divider__wrapper">
-        <div class="service-container service-container--1">
-          <img src="./img/service-bus.svg" alt="" />
-          <h3>Azure Service Bus</h3>
+      <div class="radius">
+        <div class="card gradient-border-bg">
+          <img src="./img/card-icon-2.svg" alt="" />
+          <h2>Developer Friendly</h2>
+          <p>
+            Full control by our CLI called siloctl. Manage your connections in
+            YAML files.
+          </p>
         </div>
-        <div class="service-container service-container--2">
-          <img src="./img/rabbitmq.svg" alt="" />
-          <h3>RabbitMQ</h3>
-        </div>
-        <div class="service-container service-container--3">
-          <img src="./img/aws-sqs.svg" alt="" />
-          <h3>AWS SQS</h3>
+      </div>
+      <div class="radius">
+        <div class="card gradient-border-bg">
+          <img src="./img/card-icon-3.svg" alt="" />
+          <h2>Free</h2>
+          <p>Run inside your environment with DockerTry it now!</p>
         </div>
       </div>
     </div>
 
-    <main class="section__main">
-      <p class="message">
-        <span class="message--colored">Created for developers</span> who need to
-        handle special cases of dead-lettered messages in different
-        message-brokers
-      </p>
-      <div class="card__container">
-        <div class="radius">
-          <div class="card gradient-border-bg">
-            <img src="./img/card-icon-1.svg" alt="" />
-            <div class="card-content">
-              <h2>Simple</h2>
-              <p>
-                You can control your message processing with a unified
-                configuration.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="radius">
-          <div class="card gradient-border-bg">
-            <img src="./img/card-icon-2.svg" alt="" />
-            <h2>Developer Friendly</h2>
-            <p>
-              Full control by our CLI called siloctl. Manage your connections in
-              YAML files.
-            </p>
-          </div>
-        </div>
-        <div class="radius">
-          <div class="card gradient-border-bg">
-            <img src="./img/card-icon-3.svg" alt="" />
-            <h2>Free</h2>
-            <p>Run inside your environment with DockerTry it now!</p>
-          </div>
-        </div>
+    <section class="about">
+      <div class="about__illustration-container">
+        <img class="illustration--laptop" src="./img/laptop.svg" alt="" />
       </div>
+      <div class="about__text-container">
+        <h2 class="header--primary">
+          Correct your dead-lettered <span class="colored">messages</span>
+        </h2>
+        <p>
+          You can define a custom JavaScript function that is called for every
+          dead-letter message. Transform the message and re-enqueue it
+          automatically!
+        </p>
+        <p class="highlighted">siloctl apply -f myconn.yaml</p>
+        <button class="btn btn--primary">See more examples</button>
+      </div>
+    </section>
 
-      <section class="about">
-        <div class="about__illustration-container">
-          <img class="illustration--laptop" src="./img/laptop.svg" alt="" />
-        </div>
-        <div class="about__text-container">
+    <section class="try-it">
+      <div class="try-it__container">
+        <div class="try-it__text-container">
           <h2 class="header--primary">
-            Correct your dead-lettered <span class="colored">messages</span>
+            Simplifies integration between
+            <span class="colored">systems</span>
           </h2>
           <p>
-            You can define a custom JavaScript function that is called for every
-            dead-letter message. Transform the message and re-enqueue it
+            You can define a custom JavaScript function that is called for
+            every dead-letter message. Transform the message and re-enqueue it
             automatically!
           </p>
-          <p class="highlighted">siloctl apply -f myconn.yaml</p>
-          <button class="btn btn--primary">See more examples</button>
+          <button class="btn btn--primary">Try it free</button>
         </div>
-      </section>
+        <div class="try-it__illustration-container">
+          <img src="./img/hands-illustration.png" alt="" />
+        </div>
+      </div>
+    </section>
 
-      <section class="try-it">
-        <div class="try-it__container">
-          <div class="try-it__text-container">
-            <h2 class="header--primary">
-              Simplifies integration between
-              <span class="colored">systems</span>
-            </h2>
-            <p>
-              You can define a custom JavaScript function that is called for
-              every dead-letter message. Transform the message and re-enqueue it
-              automatically!
-            </p>
-            <button class="btn btn--primary">Try it free</button>
+    <section class="api">
+      <div class="api__illustration-container">
+        <img src="./img/api.png" alt="" />
+      </div>
+      <div class="api__text-container">
+        <h2 class="header--primary">
+          Call your own APIs without <span class="colored">coding</span>
+        </h2>
+        <p>
+          Send the corrected messages to your own endpoints, or enrich the
+          message with your own business logic!
+        </p>
+        <p class="highlighted">siloctl apply -f myconn.yaml</p>
+      </div>
+    </section>
+    <section class="github">
+      <div class="github-banner">
+        <h2 class="header--primary">
+          Message Silo is fully open-source. Follow us on GitHub!
+        </h2>
+        <div class="github-buttons">
+          <div class="github-star">
+            <img src="./img/github-icon.png" alt="" />Star
           </div>
-          <div class="try-it__illustration-container">
-            <img src="./img/hands-illustration.png" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <section class="api">
-        <div class="api__illustration-container">
-          <img src="./img/api.png" alt="" />
-        </div>
-        <div class="api__text-container">
-          <h2 class="header--primary">
-            Call your own APIs without <span class="colored">coding</span>
-          </h2>
-          <p>
-            Send the corrected messages to your own endpoints, or enrich the
-            message with your own business logic!
-          </p>
-          <p class="highlighted">siloctl apply -f myconn.yaml</p>
-        </div>
-      </section>
-      <section class="github">
-        <div class="github-banner">
-          <h2 class="header--primary">
-            Message Silo is fully open-source. Follow us on GitHub!
-          </h2>
-          <div class="github-buttons">
-            <div class="github-star">
-              <img src="./img/github-icon.png" alt="" />Star
-            </div>
-            <div class="github-numbers">
-              <img class="github-polygon" src="./img/Polygon.svg" alt="" />
-              99
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer__container">
-        <div class="footer__left">
-          <div class="logo-container">
-            <img src="./img/logo.png" alt="Message Silo Logo" />
-            <h3>Message Silo</h3>
-          </div>
-        </div>
-        <div class="footer__midle">
-          <h3 class="u-margin-end-s">Resources</h3>
-          <ul>
-            <li>Home</li>
-            <li>Documentation</li>
-            <li>Getting Started</li>
-          </ul>
-        </div>
-        <div class="footer__right">
-          <h3 class="u-margin-end-s">Contact Us</h3>
-          <div class="contact u-margin-end-m">
-            <img src="./img/phone-icon.svg" alt="" />berkid89@gmail.com
-          </div>
-          <div class="contact">
-            <img src="./img/website-icon.svg" alt="" />www.message-silo.dev
+          <div class="github-numbers">
+            <img class="github-polygon" src="./img/Polygon.svg" alt="" />
+            99
           </div>
         </div>
       </div>
-      <div class="div-line"></div>
-      <div class="footer__copyright">
-        <p>2024 © copyright reserved by Message Silo</p>
-        <p>Privacy Policy</p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__container">
+      <div class="footer__left">
+        <div class="logo-container">
+          <img src="./img/logo.png" alt="Message Silo Logo" />
+          <h3>Message Silo</h3>
+        </div>
       </div>
-    </footer>
-  </body>
+      <div class="footer__midle">
+        <h3 class="u-margin-end-s">Resources</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="https://github.com/MessageSilo/MessageSilo/wiki">Documentation</a></li>
+          <li><a href="https://github.com/MessageSilo/MessageSilo/wiki/01.-Getting-Started">Getting Started</a></li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <h3 class="u-margin-end-s">Contact Us</h3>
+        <div class="contact u-margin-end-m">
+          <img src="./img/phone-icon.svg" alt="" />berkid89[at]gmail[.]com
+        </div>
+        <div class="contact">
+          <img src="./img/website-icon.svg" alt="" />www.message-silo.dev
+        </div>
+      </div>
+    </div>
+    <div class="div-line"></div>
+    <div class="footer__copyright">
+      <p>2024 © copyright reserved by Message Silo</p>
+      <p><a href="privacy-policy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
+</body>
+
 </html>
