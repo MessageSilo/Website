@@ -25,7 +25,6 @@ navToggle.addEventListener('click', function() {
         throw new Error('Unexpected value for data-visible attribute');
     }
 
-    console.log(visibility);
 });
 
 document.addEventListener("scroll", ()=>{
