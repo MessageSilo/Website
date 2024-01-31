@@ -54,6 +54,7 @@
   <script src="nav.js" defer></script>
   <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="index.js" defer></script>
 </head>
 
 <body>
@@ -66,15 +67,15 @@
 
     <nav class="flex ">
       <ul aria-hidden="false" data-visible="false" id="primary-navigation" class="primary-navigation flex">
-        <li><a class="menu-link" href="">Home</a></li>
-        <li><a class="menu-link" href="">Why</a></li>
-        <li><a class="menu-link" href="">Features</a></li>
-        <li><a class="menu-link" href="">Find Us</a></li>
+        <li><a class="menu-link" href="#home">Home</a></li>
+        <li><a class="menu-link" href="#why">Why</a></li>
+        <li><a class="menu-link" href="#features">Features</a></li>
+        <li><a class="menu-link" href="#api">Find Us</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero__container">
       <div class="hero__left">
         <h3>Message Silo</h3>
@@ -93,7 +94,7 @@
     <div class="div-line div-line--hero"></div>
   </section>
 
-  <div class="divider">
+  <div id="why" class="divider">
     <div class="divider__wrapper">
       <div class="service-container service-container--1">
         <img src="./img/service-bus.svg" alt="" />
@@ -110,13 +111,13 @@
     </div>
   </div>
 
-  <main class="section__main">
+  <main  class="section__main">
     <p class="message">
       <span class="message--colored">Created for developers</span> who need to
       handle special cases of dead-lettered messages in different
       message-brokers
     </p>
-    <div class="card__container">
+    <div id="features" class="card__container">
       <div class="radius">
         <div class="card gradient-border-bg">
           <img src="./img/card-icon-1.svg" alt="" />
@@ -186,7 +187,7 @@
       </div>
     </section>
 
-    <section class="api">
+    <section id="api" class="api">
       <div class="api__illustration-container">
         <img src="./img/api.png" alt="" />
       </div>
