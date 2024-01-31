@@ -59,7 +59,7 @@
 
 <body>
   <header class="primary-header flex">
-    <img class="navbar-logo" src="./img/logo.png" alt="" />
+    <img class="u-z-index navbar-logo" src="./img/logo.png" alt="" />
 
     <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
 
@@ -67,6 +67,7 @@
 
     <nav class="flex ">
       <ul aria-hidden="false" data-visible="false" id="primary-navigation" class="primary-navigation flex">
+        <img class="mobile-navbar-logo u-hidden" src="./img/logo.png" alt="">
         <li><a class="menu-link" href="#home">Home</a></li>
         <li><a class="menu-link" href="#why">Why</a></li>
         <li><a class="menu-link" href="#features">Features</a></li>
@@ -163,7 +164,7 @@
           dead-lettered message. Transform the message and re-enqueue it
           automatically!
         </p>
-        <img src="./img/anim-fixer.gif" alt="" />
+        <img class="fixer" src="./img/anim-fixer.gif" alt="" />
       </div>
     </section>
 
@@ -179,7 +180,7 @@
             Or does the other system use a completely different message broker solution? 
             No problem! Configure some Message Silo connections and you're done. ;)
           </p>
-          <img src="./img/anim-integ.gif" alt="" />
+          <img class="integration" src="./img/anim-integ.gif" alt="integration-graph" />
         </div>
         <div class="try-it__illustration-container">
           <img src="./img/hands-illustration.png" alt="" />
@@ -198,7 +199,7 @@
         <p>
           Bring your OpenAI subscription or AI endpoint, Message Silo do the rest!
         </p>
-        <img src="./img/anim-ai.gif" alt="" />
+        <img class="ai" src="./img/anim-ai.gif" alt="" />
       </div>
     </section>
     <section class="github">

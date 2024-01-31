@@ -52,6 +52,14 @@ a:visited {
   display: flex;
 }
 
+.u-z-index {
+  z-index: 999;
+}
+
+.u-hidden {
+  display: none;
+}
+
 .div-line {
   height: 0.4rem;
   width: 90vw;
@@ -67,6 +75,11 @@ a:visited {
   align-items: center;
   padding: 3rem 10%;
   flex-grow: 1;
+}
+
+.mobile-navbar-logo {
+  width: 50px;
+  aspect-ratio: 1;
 }
 
 .primary-navigation li {
@@ -114,10 +127,10 @@ nav {
 @media (max-width: 850px) {
   .primary-navigation {
     position: fixed;
-    inset: 0 0 0 0;
+    inset: 0 0 0 20%;
     background: steelblue;
     flex-direction: column;
-    padding: 30vh 5rem;
+    padding: 30vh 8rem;
     gap: 3rem;
     justify-content: initial;
     transform: translateX(100%);
@@ -453,6 +466,16 @@ nav {
 .about__illustration-container .illustration--laptop {
   width: 100%;
 }
+.about__text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about__text-container .fixer {
+  width: 80%;
+  max-width: 80rem;
+}
 .about__text-container h2 {
   margin-bottom: 2rem;
 }
@@ -472,7 +495,6 @@ nav {
   max-width: 190rem;
   width: 90%;
   margin: 0 auto;
-  height: 62rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -487,6 +509,16 @@ nav {
 }
 .try-it__illustration-container img {
   max-height: 100%;
+}
+.try-it__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.try-it__text-container .integration {
+  width: 80%;
+  max-width: 80rem;
 }
 .try-it__text-container h2 {
   margin-bottom: 4rem;
@@ -511,6 +543,14 @@ nav {
   gap: 2rem;
   flex-direction: column;
   width: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.api__text-container .ai {
+  width: 80%;
+  max-width: 80rem;
 }
 .api__illustration-container img {
   width: 80rem;

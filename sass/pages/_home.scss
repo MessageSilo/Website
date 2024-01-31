@@ -135,8 +135,15 @@
     }
 
     &__text-container{
-       
-    
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+        
+       .fixer{
+              width: 80%;
+              max-width: 80rem;
+       }
 
         h2{
             margin-bottom: 2rem;
@@ -158,8 +165,7 @@
 
     &__container{
     @include max-width;
-    height: 62rem;
-    @include flexbox(space-between,center,10rem)
+    @include flexbox(space-between,center,10rem);
     
     }
 
@@ -175,6 +181,15 @@
         
     }
     &__text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .integration{
+            width: 80%;
+            max-width: 80rem;
+        }
         
         h2{
             margin-bottom: 4rem;
@@ -184,7 +199,11 @@
             margin-bottom: 4rem;
         }
     }
+
+    
   }
+
+
 
   .api{
     @include max-width($margin: 10rem auto);
@@ -193,7 +212,16 @@
     &__text-container{
         @include flexbox(start,start,2rem,column);
         width: 80rem;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .ai{
+            width: 80%;
+            max-width: 80rem;
+        }
     }
 
     &__illustration-container{
