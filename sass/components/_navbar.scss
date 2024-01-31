@@ -6,9 +6,20 @@
   width: 100%;
   align-items: center;
   padding: 3rem 10%;
- 
   flex-grow: 1;
-  
+}
+
+.primary-navigation li{
+  transition: all 0.2s ease-out;
+
+}
+
+.primary-navigation li:hover{
+  transform: translateY(-0.3rem);
+}
+
+.menu-link:hover{
+  color: $color-secondary;
 }
 
 .navbar-logo {

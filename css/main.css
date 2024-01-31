@@ -69,6 +69,18 @@ a:visited {
   flex-grow: 1;
 }
 
+.primary-navigation li {
+  transition: all 0.2s ease-out;
+}
+
+.primary-navigation li:hover {
+  transform: translateY(-0.3rem);
+}
+
+.menu-link:hover {
+  color: #00d9d0;
+}
+
 .navbar-logo {
   cursor: pointer;
   transition: all 0.2s ease-out;
@@ -98,7 +110,7 @@ nav {
     inset: 0 0 0 25%;
     background: steelblue;
     flex-direction: column;
-    padding: min(30vh, 15rem) 5rem;
+    padding: 30vh 5rem;
     gap: 3rem;
     justify-content: initial;
     transform: translateX(100%);
