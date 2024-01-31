@@ -311,7 +311,7 @@ nav {
 
 .footer__midle li {
   line-height: 250%;
-  list-style-image: url("../img/arrow-right.svg");
+  list-style-image: url("../img/arrow.svg");
   display: flex;
   align-items: center;
 }
