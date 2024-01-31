@@ -166,7 +166,7 @@
     &__container{
     @include max-width;
     @include flexbox(space-between,center,10rem);
-    
+    height: 70rem
     }
 
     &__illustration-container{

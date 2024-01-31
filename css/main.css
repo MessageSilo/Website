@@ -499,6 +499,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 10rem;
+  height: 70rem;
 }
 .try-it__illustration-container {
   display: flex;
@@ -624,9 +625,6 @@ nav {
     width: 20vw;
     height: 100%;
   }
-  .try-it__container {
-    height: 100%;
-  }
   .try-it__illustration-container img {
     width: 500px;
   }
@@ -681,7 +679,7 @@ nav {
     left: 0px;
   }
   .try-it__container {
-    height: 45rem;
+    height: 60rem;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -791,6 +789,9 @@ nav {
   .about .illustration--laptop {
     width: 380px;
   }
+  .try-it .try-it__illustration-container {
+    display: none;
+  }
   .try-it .try-it__illustration-container img {
     width: 330px;
   }
@@ -836,9 +837,6 @@ nav {
   .about__text-container {
     width: 100%;
     text-align: center;
-  }
-  .try-it__container {
-    height: 35rem;
   }
   .try-it__text-container {
     text-align: center;
@@ -925,7 +923,6 @@ nav {
     align-items: center;
   }
   .try-it {
-    height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;

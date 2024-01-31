@@ -5,7 +5,8 @@ const navLogo = document.querySelector(".navbar-logo");
 const mobilNavLogo = document.querySelector(".mobile-navbar-logo");
 
 navToggle.addEventListener('click', function() {
-    const visibility = primaryNav.getAttribute('data-visible');
+  
+  const visibility = primaryNav.getAttribute('data-visible');
 
     if (visibility === 'false') {
         primaryNav.setAttribute('data-visible', 'true');

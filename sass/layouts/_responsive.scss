@@ -16,9 +16,6 @@
     height: 100%;
   }
 
-  .try-it__container {
-    height: 100%;
-  }
 
   .try-it__illustration-container {
     img {
@@ -116,7 +113,7 @@
 
   //TRY IT SECTION
   .try-it__container {
-    height: 45rem;
+    height: 60rem;
   }
 }
 
@@ -268,9 +265,14 @@
   //TRY IT SECTION
   .try-it {
     .try-it__illustration-container {
+      display: none;
       img {
         width: 330px;
       }
+    }
+
+    &__container {
+      
     }
   }
 }
@@ -336,10 +338,7 @@
 
   //TRY IT SECTION
   .try-it {
-    &__container {
-      height: 35rem;
-    }
-
+   
     &__text-container {
       text-align: center;
     }
@@ -458,7 +457,6 @@
   }
 
   .try-it{
-    height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
