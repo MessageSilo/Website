@@ -1,3 +1,4 @@
+[![dev](https://github.com/MessageSilo/Website/actions/workflows/azure-static-web-apps-icy-moss-0d8d9d403.yml/badge.svg?branch=dev)](https://github.com/MessageSilo/Website/actions/workflows/azure-static-web-apps-icy-moss-0d8d9d403.yml)
 [![CI/CD](https://github.com/MessageSilo/Website/actions/workflows/azure-static-web-apps-gentle-island-01a3d2b03.yml/badge.svg)](https://github.com/MessageSilo/Website/actions/workflows/azure-static-web-apps-gentle-island-01a3d2b03.yml)
 
 # Message Silo Website
@@ -22,5 +23,5 @@ npm install
 Compile SASS:
 
 ```sh
-npm run compile:sass
+npm run build
 ```
