@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass sass/main.scss css/stlye.css"
+    "build": "node-sass sass/main.scss css/stlye.css"
   },
   "author": "",
   "license": "ISC",

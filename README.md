@@ -22,5 +22,5 @@ npm install
 Compile SASS:
 
 ```sh
-npm run compile:sass
+npm run build
 ```
