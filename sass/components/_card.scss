@@ -2,6 +2,7 @@
     border-radius: 10px;
     position: relative;
     width: 100%;
+  
   }
 
   .gradient-border-bg {
@@ -14,9 +15,25 @@
     width: 100%;
     text-align: center;
     line-height: 172%;
+  
     
     
-    
+    ::after{
+      background-color: rgba(0,129,255,.247);
+      border-radius: 50%;
+      bottom: 50%;
+      box-shadow: 0 0 20rem 4rem#0081ff;
+      content: "";
+      display: block;
+      height: 10px;
+      left: 50%;
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 0;
+      z-index: -1;
+    }
 
     h2{
         font-size: 3.2rem;
