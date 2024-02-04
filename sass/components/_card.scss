@@ -1,31 +1,52 @@
-.radius {
-    border-radius: 10px;
-    position: relative;
-    width: 100%;
+.card__container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  max-width: $max-width;
+  width: 90%;
+  gap: 2rem;
+  margin: 0 auto;
+}
   
-  }
-
   .gradient-border-bg {
-    border: 5px solid;
-    border-radius: 10px;
-    border-image: linear-gradient(to bottom,#00D9D0 , #0081FF) 1;
-    padding: 11rem 3rem 0 3rem;
-    background: rgba(0,129,255,11%);
-    height: 35rem;
-    width: 100%;
+    background: rgba(0,129,255,.11);
+    padding: 10rem 5rem;
+    border-radius: 15px;
+    margin: 75px 0;
+    position: relative;
+    z-index: 0;
+    height: 320px;
     text-align: center;
-    line-height: 172%;
+  
+ 
   
     
+    ::before{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      padding: 2px;
+      border-radius: 15px;
+      background: linear-gradient(to bottom, #00D9D0, #0081FF);
+      -webkit-mask: 
+         linear-gradient(#fff 0 0) content-box, 
+         linear-gradient(#fff 0 0);
+              mask: 
+         linear-gradient(#fff 0 0) content-box, 
+         linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: exclude;
+    
+    }
     
     ::after{
       background-color: rgba(0,129,255,.247);
       border-radius: 50%;
       bottom: 50%;
-      box-shadow: 0 0 20rem 4rem#0081ff;
+      box-shadow: 0 0 20rem 4rem #0081ff;
       content: "";
       display: block;
-      height: 10px;
+      height: 20%;
       left: 50%;
       position: absolute;
       right: 50%;
@@ -49,6 +70,7 @@
         margin: 1rem 0 3rem 0;
         transform: translateX(-50%)
     }
+
     
   }
   

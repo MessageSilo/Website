@@ -106,13 +106,7 @@
         }
     }
 
-    .card__container{
-        @include flexbox(center,center,2rem);
-        max-width: $max-width;
-        width: 90%;
-        margin: 0 auto;
-        padding: 0 10rem;
-    }
+    
 }
 
 .about{

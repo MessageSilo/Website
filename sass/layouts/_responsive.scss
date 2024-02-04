@@ -5,16 +5,12 @@
 }
 
 @media only screen and (max-width: 1400px) {
-  .section__main {
-    .card__container {
-      padding: 0 1rem;
-    }
+
+
+  .card {
+    height: 380px;
   }
 
-  .card__container {
-    width: 20vw;
-    height: 100%;
-  }
 
 
   .try-it__illustration-container {
@@ -118,6 +114,16 @@
 }
 
 @media only screen and (max-width: 1024px) {
+
+  .card__container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+  }
+
+  .card{
+    height: 300px;
+  }
+
   //TYPEOGRAPHY
   .header--primary {
     font-size: 2.8rem;
@@ -275,17 +281,6 @@
 
 @media only screen and (max-width: 850px) {
   // CARDS SECTION
-  .section__main {
-    .card__container {
-      flex-wrap: wrap;
-      gap: 10rem;
-
-      .gradient-border-bg {
-        height: 30rem;
-      }
-    }
-  }
-
   .github-banner {
     padding: 0 5rem;
     h2 {
