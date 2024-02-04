@@ -69,12 +69,11 @@ a:visited {
 .primary-header {
   position: fixed;
   top: 0;
+  width: 100%;
   justify-content: space-between;
   z-index: 100;
-  width: 100%;
   align-items: center;
-  padding: 3rem 10%;
-  flex-grow: 1;
+  padding: 2rem 10%;
 }
 
 .mobile-navbar-logo {
@@ -167,7 +166,7 @@ nav {
     z-index: 999;
     width: 3rem;
     aspect-ratio: 1;
-    top: 4rem;
+    top: 2.5rem;
     right: 4rem;
     border: none;
     transition: background 0.2s ease-out;
@@ -544,6 +543,7 @@ nav {
 }
 .try-it__text-container h2 {
   margin-bottom: 4rem;
+  align-self: flex-start;
 }
 .try-it__text-container p {
   margin-bottom: 4rem;
