@@ -583,6 +583,7 @@ nav {
 }
 .api p {
   margin-bottom: 3rem;
+  align-self: flex-start;
 }
 
 .github-banner {
