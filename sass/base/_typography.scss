@@ -1,0 +1,25 @@
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+a:link,
+a:visited {
+  color: $color-base-font-white;
+  text-decoration: none;
+}
+
+.header--primary{
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+.highlighted{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.colored{
+  color: $color-secondary;
+}

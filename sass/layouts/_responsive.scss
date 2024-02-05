@@ -1,0 +1,489 @@
+@media only screen and (max-width: 1600px) {
+  div.github-banner {
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+
+
+  .card {
+    height: 380px;
+  }
+
+
+
+  .try-it__illustration-container {
+    img {
+      width: 500px;
+    }
+  }
+
+  .service-container--2 {
+    padding-left: 50px;
+  }
+
+  .github-banner {
+    h2 {
+      width: 60rem;
+    }
+  }
+
+  .github-buttons {
+    .github-star {
+      padding: 2rem 4rem;
+    }
+
+    .github-numbers {
+      padding: 2rem 3rem;
+    }
+  }
+
+  //ABOUT SECTION
+  .about {
+    &__illustration-container {
+      left: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .github-banner {
+    h2 {
+      width: 50rem;
+      font-size: 3rem;
+    }
+  }
+
+  .try-it__illustration-container {
+    img {
+      width: 400px;
+    }
+  }
+
+  .about {
+    .illustration--laptop {
+      width: 500px;
+    }
+  }
+
+  .service-container {
+    h3 {
+      font-size: 2.3rem;
+    }
+  }
+
+  .hero__left {
+    h3 {
+      font-size: 2.3rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+
+    button {
+      font-size: 1.8rem;
+      padding: 1.5rem 2.5rem;
+      width: 150px;
+    }
+  }
+
+  //CARDS
+  .gradient-border-bg {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  //ABOUT SECTION
+  .about {
+    &__illustration-container {
+      left: 0px;
+    }
+  }
+
+  //TRY IT SECTION
+  .try-it__container {
+    height: 60rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .card__container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+  }
+
+  .card{
+    height: 300px;
+  }
+
+  //TYPEOGRAPHY
+  .header--primary {
+    font-size: 2.8rem;
+  }
+
+  .highlighted {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  //BUTTONS
+  .btn {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  //NAVBAR
+  .navbar {
+    padding: 3rem 5rem;
+
+    &__hamburger {
+      display: block;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+
+  .github-banner {
+    padding: 0 10rem;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .github-buttons {
+    .github-star {
+      padding: 1.5rem 3rem;
+    }
+
+    .github-numbers {
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  //HERO SECTION
+  .hero__container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+
+    .hero__right {
+      width: 100%;
+      height: 30vh;
+      
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .hero__left {
+      width: 100%;
+      padding: 0 2rem;
+      text-align: center;
+      @include flexbox(center, center, 2vh);
+
+      h3 {
+        font-size: 3rem;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+
+      button {
+        font-size: 1.6rem;
+        padding: 1.5rem 2.5rem;
+        width: 150px;
+      }
+    }
+  }
+
+  //DIVIDER SERVICE ICONS
+
+  .divider__wrapper {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .service-container--1 {
+    gap: 2rem;
+    img {
+      width: 50px;
+    }
+  }
+
+  .service-container--2 {
+    gap: 2rem;
+    img {
+      width: 50px;
+    }
+  }
+
+  .service-container--3 {
+    gap: 2rem;
+    img {
+      width: 50px;
+    }
+  }
+
+  //CARDS
+  .gradient-border-bg {
+    padding: 10rem 1.5rem 0 1.5rem;
+    line-height: 150%;
+  }
+
+  .section__main {
+    .message {
+      width: 70%;
+    }
+  }
+
+  //ABOUT SECTION
+  .about {
+    margin: 0 auto;
+
+    .illustration--laptop {
+      width: 380px;
+    }
+  }
+
+  //TRY IT SECTION
+  .try-it {
+    .try-it__illustration-container {
+      display: none;
+      img {
+        width: 330px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  // CARDS SECTION
+  .github-banner {
+    padding: 0 5rem;
+    h2 {
+      font-size: 2.1rem;
+    }
+  }
+
+  .github-buttons {
+    .github-star {
+      padding: 1rem 1.5rem;
+    }
+
+    .github-numbers {
+      padding: 1rem 1.5rem;
+
+      img.github-polygon {
+        left: -20%;
+        height: 20px;
+      }
+    }
+  }
+
+  //DIVIDER SERVICE ICONS
+  .service-container--2 {
+    padding-left: 35px;
+  }
+
+  //ABOUT SECTION
+  .about {
+    height: 80rem;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 5rem;
+    justify-content: center;
+
+    .illustration--laptop {
+      width: 80%;
+      transform: translateX(3%);
+    }
+
+    &__text-container {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  //TRY IT SECTION
+  .try-it {
+   
+    &__text-container {
+      text-align: center;
+    }
+    .try-it__illustration-container {
+      display: none;
+    }
+  }
+
+  //FOOTER SECTION
+  .footer__container {
+    padding: 0 5rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5rem;
+
+    .footer__left {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+
+     
+    }
+
+    .footer__midle {
+      width: 100%;
+      text-align: start;
+      transform: translateX(2rem);
+
+      h3{
+        transform: translateX(-2rem);
+      }
+
+      ul{
+        font-size: 1.5rem;
+        width: 100%;
+      }
+    }
+
+    .footer__right {
+      width: 100%;
+      text-align: start;
+      .contact {
+        font-size: 1.5rem;
+      }
+
+    }
+
+    .footer__copyright{
+
+      p{
+        font-size: 1.2rem;
+      }
+      
+    }
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .hero{
+    .hero__left{
+      h1{
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  div.github-banner {
+    height: auto;
+    padding: 3rem 1rem;
+    width: 85%;
+  }
+
+  .github-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .divider{
+    height: 100%;
+    padding: 10% 0;
+    &__wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+
+        .service-container{
+          justify-content: center;
+          flex-direction: column;
+        }
+
+        .service-container--2{
+          padding-left: 0;
+        }
+    }
+  }
+
+
+  .api{
+    flex-wrap: wrap;
+
+    &__text-container{
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .try-it{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__copyright{
+    flex-direction: column;
+    align-items: start;
+    padding: 0 2.5rem;
+    p{
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+
+
+
+@media only screen and (max-height: 650px) {
+  .hero__container {
+    
+    .hero__right {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .hero__container {
+      gap: 2rem;
+    .hero__right {
+      img{
+        height: 60%;
+      }
+    }
+  }
+}
+

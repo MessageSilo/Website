@@ -1,0 +1,15 @@
+{
+  "name": "message-silo-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass sass/main.scss css/stlye.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

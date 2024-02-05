@@ -1,0 +1,10 @@
+.div-line {
+    height: 0.4rem;
+    width: 90vw;
+    background-image: linear-gradient(
+        to right,
+        rgba(2,19,39,0) 40%,
+        rgba(0,217,208,1) 50%, // Add the alpha value here
+        rgba(2,19,39,0) 70%
+    );
+}

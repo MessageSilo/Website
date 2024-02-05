@@ -1,0 +1,128 @@
+.primary-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 100;
+  align-items: center;
+  padding: 2rem 10%;
+}
+
+.mobile-navbar-logo{
+  width: 50px;
+  aspect-ratio: 1;
+}
+.primary-navigation li{
+  transition: all 0.2s ease-out;
+
+}
+
+.primary-navigation li:hover{
+  transform: translateY(-0.3rem);
+}
+
+.menu-link:hover{
+  color: $color-secondary;
+}
+
+.navbar-logo {
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+
+.primary-navigation {
+  list-style: none;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 2rem;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.scrolled{
+  background: hsla(0, 0%, 57%, 0.3);
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
+  transition: all 0.3s ease-out;
+}
+
+@media (max-width: 850px) {
+  .primary-navigation {
+    position: fixed;
+    inset: 0 0 0 20%;
+    background: steelblue;
+    flex-direction: column;
+    padding: 30vh 8rem;
+    gap: 3rem;
+    justify-content: initial;
+    transform: translateX(100%);
+  
+    
+
+   
+    transition: transform 0.3s ease-out;
+
+    background: hsla(0, 0%, 57%, 0.3);
+    -webkit-backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2rem);
+
+    .menu-link {
+      display: flex;
+      align-items: center;
+      &:before {
+        content: "";
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-right: 1rem;
+        background-image: url(../img/arrow.svg);
+      }
+    }
+  }
+
+  nav {
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    user-select: none;
+    
+    display: block;
+  }
+
+  .mobile-nav-toggle {
+    position: fixed;
+    display: block;
+    background: url(../img/bars-solid.svg) no-repeat center center;
+    z-index: 999;
+    width: 3rem;
+    aspect-ratio: 1;
+    top: 3rem;
+    right: 4rem;
+    border: none;
+    transition: background 0.2s ease-out;
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0);
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background: url(../img/x-solid.svg) no-repeat center center;
+  }
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }

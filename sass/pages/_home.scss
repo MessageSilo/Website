@@ -1,0 +1,289 @@
+
+.hero{
+    height: 100svh;
+    background-image: url(../img/hero-background.png);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    &__container{
+        max-width: $max-width;
+        height: 100%;
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-very-dark-blue,.85);
+        z-index: -1;
+    }
+
+    &__left {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+        gap: 5rem;
+        justify-content: center;
+        width: 50%;
+        
+        button{
+        width: 200px;
+        }
+
+        h3 {
+            font-size: 3.2rem;
+            background: linear-gradient(90deg, $color-primary 0%, $color-secondary 30%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            width: 100%;
+        }
+
+        h1{
+            font-size: 6.4rem;
+            display: inline-block;
+            max-width: 70rem;
+            line-height: 108%;
+            width: 100%;
+            
+        }
+
+        p{
+            font-size: 2.4rem;
+            line-height: 172%;
+            max-width: 70rem;
+        }
+
+        
+      }
+
+      
+
+      &__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 80vh;
+
+        img{
+            width: 100%;
+            margin-top: 5rem;
+        }
+
+      }
+      
+    }
+    
+.div-line--hero{
+    position: absolute;
+    bottom: 0;
+}
+.section__main{
+
+    .message{
+        width: 80rem;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 500;
+        padding: 10rem 0;
+
+        &--colored{
+            color: $color-secondary;
+            font-size: 2rem;
+        }
+    }
+
+    
+}
+
+.about{
+    @include max-width($margin: 10rem auto);
+    height: 60rem;
+    @include flexbox(center,center);
+
+    &__illustration-container{
+
+        position: relative;
+        left: 50px;
+        @include flexbox(center,center);
+        width: 100%;
+    
+        .illustration--laptop{
+            width: 100%;
+        }
+        
+        
+    }
+
+    &__text-container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+        
+       .fixer{
+              width: 80%;
+              max-width: 80rem;
+       }
+
+        h2{
+            margin-bottom: 2rem;
+        }
+
+        p{
+            margin-bottom: 3rem;
+            line-height: 174%;
+        }
+    }
+  }
+  
+  .illustration--laptop{
+    opacity: 100%;
+  }
+
+  .try-it{
+    background-color: $color-bg-secondary;
+
+    &__container{
+    @include max-width;
+    @include flexbox(space-between,center,10rem);
+    height: 70rem
+    }
+
+    &__illustration-container{
+        @include flexbox(center,end);
+        width: 50vw;
+        height: 100%;
+
+        img{
+            max-height: 100%;
+            
+        }
+        
+    }
+    &__text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .integration{
+            width: 80%;
+            max-width: 80rem;
+        }
+        
+        h2{
+            margin-bottom: 4rem;
+            align-self: flex-start;
+        }
+
+        p{
+            margin-bottom: 4rem;
+        }
+    }
+
+    
+  }
+
+
+
+  .api{
+    @include max-width($margin: 10rem auto);
+    @include flexbox(center,center,5rem);
+
+    &__text-container{
+        @include flexbox(start,start,2rem,column);
+        width: 80rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .ai{
+            width: 80%;
+            max-width: 80rem;
+        }
+    }
+
+    &__illustration-container{
+        img{
+            width: 80rem;
+            max-width: 100%;
+        }
+    }
+
+    h2{
+        margin-bottom: 3rem;
+    }
+
+    p{
+        margin-bottom: 3rem;
+        align-self: flex-start;
+    }
+  }
+  
+.github{
+
+&-banner{
+@include max-width(80%);
+@include flexbox(center,center,5rem);
+
+h2{
+    width: 50%;
+}
+
+height: 25rem;
+background-image: linear-gradient(to right, $color-primary, $color-secondary);
+border-radius: 1rem;
+}   
+
+&-buttons{
+    @include flexbox(center,center,2.5rem);
+    color: #000 ;
+
+    .github-star{
+        @include flexbox(center,center,1rem);
+        padding: 2.5rem 5rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        font-size: 2rem;
+    }
+
+    .github-numbers{
+        padding: 2.5rem 3.5rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        position: relative;
+        z-index: 1;
+        font-size: 2rem;
+
+        .github-polygon{
+            position: absolute;
+            height: 3rem;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -15%
+        }
+    }
+
+
+}
+
+
+
+}
+
