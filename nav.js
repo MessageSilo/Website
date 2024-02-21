@@ -40,19 +40,21 @@ function openMobileNav(){
 
 
 
-
-document.addEventListener("scroll", ()=>{
-  
+let scrollTimeout;
+document.addEventListener("scroll", () => {
   const visibility = primaryNav.getAttribute('data-visible');
   
-  if(visibility === 'false'){
-    if(window.scrollY > 0){
-      setTimeout(() => {
-        header.classList.add("scrolled");
-      }, 400);
-    }else{
-      header.classList.remove("scrolled");
-    }
+  // Töröld az előző timeout-ot, ha van
+  clearTimeout(scrollTimeout);
+  
+  if (visibility === 'false' && window.scrollY > 0) {
+    // Állíts be egy új timeout-ot
+    scrollTimeout = setTimeout(() => {
+      header.classList.add("scrolled");
+    }, 200);
+  } else {
+    // Ha felfelé görgetsz, vagy a mobile-nav nyitva van, akkor azonnal töröld a "scrolled" class-t
+    header.classList.remove("scrolled");
   }
 });
 
