@@ -80,27 +80,30 @@ window.addEventListener("resize", () => {
 const scrollOptions = {
   duration: 700,distance: "100px", easing: 'ease-in-out',
 }
+
+const timingPattern = [300,600,900,1200,1500,1900,2200]
+
 // Hero Section
-ScrollReveal().reveal('.hero__right', { ...scrollOptions, delay: 300,})
-ScrollReveal().reveal('.hero__left h3', {...scrollOptions, origin: 'left', delay: 600})
-ScrollReveal().reveal('.hero__left h1', {...scrollOptions, origin: 'left', delay: 900})
-ScrollReveal().reveal('.hero__left p', {...scrollOptions, origin: 'left', delay: 1200})
-ScrollReveal().reveal('.hero__left button', {...scrollOptions, delay: 1500})
+ScrollReveal().reveal('.hero__right', { ...scrollOptions, delay: timingPattern[0],})
+ScrollReveal().reveal('.hero__left h3', {...scrollOptions, origin: 'left', delay: timingPattern[1]})
+ScrollReveal().reveal('.hero__left h1', {...scrollOptions, origin: 'left', delay: timingPattern[2]})
+ScrollReveal().reveal('.hero__left p', {...scrollOptions, origin: 'left', delay: timingPattern[3]})
+ScrollReveal().reveal('.hero__left button', {...scrollOptions, delay: timingPattern[4]})
 
 
 // Divider Section
-ScrollReveal().reveal('.service-container--1', { ...scrollOptions, origin: 'left', delay: 300})
-ScrollReveal().reveal('.service-container--2', { ...scrollOptions, origin: 'left', delay: 600})
-ScrollReveal().reveal('.service-container--3', { ...scrollOptions, origin: 'left', delay: 900})
+ScrollReveal().reveal('.service-container--1', { ...scrollOptions, origin: 'left', delay: timingPattern[0]})
+ScrollReveal().reveal('.service-container--2', { ...scrollOptions, origin: 'left', delay: timingPattern[1]})
+ScrollReveal().reveal('.service-container--3', { ...scrollOptions, origin: 'left', delay: timingPattern[2]})
 
 
 // Message Section 
 ScrollReveal().reveal('.message', { ...scrollOptions, delay: 500})
 
 // Card Section
-ScrollReveal().reveal('.card-1', { ...scrollOptions, delay: 300, mobile: false})
-ScrollReveal().reveal('.card-2', { ...scrollOptions, delay: 600, mobile: false})
-ScrollReveal().reveal('.card-3', { ...scrollOptions, delay: 900, mobile: false})
+ScrollReveal().reveal('.card-1', { ...scrollOptions, delay: timingPattern[0], mobile: false})
+ScrollReveal().reveal('.card-2', { ...scrollOptions, delay: timingPattern[1], mobile: false})
+ScrollReveal().reveal('.card-3', { ...scrollOptions, delay: timingPattern[3], mobile: false})
 
 ScrollReveal().reveal('.card-1', { ...scrollOptions, delay: 100, desktop: false})
 ScrollReveal().reveal('.card-2', { ...scrollOptions, delay: 200, desktop: false})
@@ -109,27 +112,28 @@ ScrollReveal().reveal('.card-3', { ...scrollOptions, delay: 300, desktop: false}
 
 
 // About Section
-ScrollReveal().reveal('.about__illustration-container', { ...scrollOptions, origin: 'left', delay: 300})
-ScrollReveal().reveal('.about__text-container h2', { ...scrollOptions, origin: 'right', delay: 600})
-ScrollReveal().reveal('.about__text-container p', { ...scrollOptions, origin: 'right', delay: 900})
+ScrollReveal().reveal('.about__illustration-container', { ...scrollOptions, origin: 'left', delay: timingPattern[0]})
+ScrollReveal().reveal('.about__text-container h2', { ...scrollOptions, origin: 'right', delay: timingPattern[1]})
+ScrollReveal().reveal('.about__text-container p', { ...scrollOptions, origin: 'right', delay: timingPattern[2]})
 ScrollReveal().reveal('.about__text-container img', { ...scrollOptions, delay: 1300})
 
 //try it section
-ScrollReveal().reveal('.try-it__text-container h2', { ...scrollOptions, origin: 'left', delay: 300})
-ScrollReveal().reveal('.try-it__text-container p', { ...scrollOptions, origin: 'left', delay: 600})
-ScrollReveal().reveal('.try-it__text-container img', { ...scrollOptions, delay: 900})
-ScrollReveal().reveal('.try-it__illustration-container', { ...scrollOptions, delay: 1200})
+ScrollReveal().reveal('.try-it__text-container h2', { ...scrollOptions, origin: 'left', delay: timingPattern[0]})
+ScrollReveal().reveal('.try-it__text-container p', { ...scrollOptions, origin: 'left', delay: timingPattern[1]})
+ScrollReveal().reveal('.try-it__text-container img', { ...scrollOptions, delay: timingPattern[2]})
+ScrollReveal().reveal('.try-it__illustration-container', { ...scrollOptions, delay: timingPattern[3]})
 
 //API Section
-ScrollReveal().reveal('.api__illustration-container', { ...scrollOptions, origin: 'left', delay: 300})
-ScrollReveal().reveal('.api__text-container h2', { ...scrollOptions, origin: 'right', delay: 600})
-ScrollReveal().reveal('.api__text-container p', { ...scrollOptions, origin: 'right', delay: 900})
-ScrollReveal().reveal('.api__text-container img', { ...scrollOptions, delay: 1200})
+ScrollReveal().reveal('.api__illustration-container', { ...scrollOptions, origin: 'left', delay: timingPattern[0]})
+ScrollReveal().reveal('.api__text-container h2', { ...scrollOptions, origin: 'right', delay: timingPattern[1]})
+ScrollReveal().reveal('.api__text-container p', { ...scrollOptions, origin: 'right', delay: timingPattern[2]})
+ScrollReveal().reveal('.api__text-container img', { ...scrollOptions, delay: timingPattern[3]})
 
 //github section
-ScrollReveal().reveal('.github-banner h2', { ...scrollOptions, origin: 'left', delay: 300})
-ScrollReveal().reveal('.github-banner .github-buttons', { ...scrollOptions, origin: 'right', delay: 600})
+ScrollReveal().reveal('.github-banner h2', { ...scrollOptions, origin: 'left', delay: timingPattern[0]})
+ScrollReveal().reveal('.github-banner .github-buttons', { ...scrollOptions, origin: 'right', delay: timingPattern[1]})
 
 //footer section
-ScrollReveal().reveal('.footer__container', { ...scrollOptions,delay: 300})
+ScrollReveal().reveal('.footer__container', { ...scrollOptions,delay: timingPattern[0]})
 //--------------------------------------------------------
+
