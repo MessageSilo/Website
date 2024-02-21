@@ -9,18 +9,9 @@ navToggle.addEventListener('click', function() {
   const visibility = primaryNav.getAttribute('data-visible');
 
     if (visibility === 'false') {
-        primaryNav.setAttribute('data-visible', 'true');
-        navToggle.setAttribute('aria-expanded', 'true');
-        header.classList.remove("scrolled");   
-        navLogo.classList.add("u-hidden");   
-        mobilNavLogo.classList.remove("u-hidden");  
+      openMobileNav();
     }else if(visibility === 'true'){
-        primaryNav.setAttribute('data-visible', 'false');
-        navToggle.setAttribute('aria-expanded', 'false');
-        setTimeout(()=>{navLogo.classList.remove("u-hidden");}, 300); 
-        mobilNavLogo.classList.add("u-hidden");  
-        if(window.scrollY > 0){
-          setTimeout(()=>{header.classList.add("scrolled");}, 300);}
+      closeMobileNav();
           
     }else{
         throw new Error('Unexpected value for data-visible attribute');
@@ -28,18 +19,42 @@ navToggle.addEventListener('click', function() {
 
 });
 
+// Close Mobile Nav
+function closeMobileNav(){
+  primaryNav.setAttribute('data-visible', 'false');
+  navToggle.setAttribute('aria-expanded', 'false');
+  setTimeout(()=>{navLogo.classList.remove("u-hidden");}, 300); 
+  mobilNavLogo.classList.add("u-hidden");  
+  if(window.scrollY > 0){
+    setTimeout(()=>{header.classList.add("scrolled");}, 300);}
+}
+
+function openMobileNav(){
+  primaryNav.setAttribute('data-visible', 'true');
+  navToggle.setAttribute('aria-expanded', 'true');
+  header.classList.remove("scrolled");   
+  navLogo.classList.add("u-hidden");   
+  mobilNavLogo.classList.remove("u-hidden");  
+}
+
+
+
+
+
 document.addEventListener("scroll", ()=>{
   
   const visibility = primaryNav.getAttribute('data-visible');
+  
   if(visibility === 'false'){
     if(window.scrollY > 0){
-      header.classList.add("scrolled");
+      setTimeout(() => {
+        header.classList.add("scrolled");
+      }, 400);
     }else{
       header.classList.remove("scrolled");
     }
   }
-}
-)
+});
 
 // Resize Animation Bug Fix
 let resizeTimer;
