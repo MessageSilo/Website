@@ -38,9 +38,6 @@ document.addEventListener("scroll", ()=>{
       header.classList.remove("scrolled");
     }
   }
-
-  
-
 }
 )
 
@@ -53,5 +50,18 @@ window.addEventListener("resize", () => {
     document.body.classList.remove("resize-animation-stopper");
   }, 400);
 });
+//-------------------------------------------------------
 
-
+//Scroll Reveal Animations 
+ScrollReveal().reveal('.hero', { duration: 1500, reset: true ,distance: "100px"})
+ScrollReveal().reveal('.divider', { duration: 1500, reset: true,distance: "100px"})
+ScrollReveal().reveal('.message', { duration: 1500 , reset: true,distance: "100px"})
+ScrollReveal().reveal('.features', { duration: 1500 , reset: true,distance: "100px"})
+ScrollReveal().reveal('.card__container', { duration: 1500 , reset: true,distance: "100px"})
+ScrollReveal().reveal('.about', { duration: 1500 , reset: true,distance: "100px"})
+ScrollReveal().reveal('.try-it', { duration: 1500 , reset: true,distance: "100px"})
+ScrollReveal().reveal('.api', { duration: 1500 , reset: true,distance: "100px"})
+ScrollReveal().reveal('.github', { duration: 1500 , reset: true,distance: "100px"})
+ScrollReveal().reveal('.footer__container', { duration: 1500 , reset: true,distance: "100px"})
+ScrollReveal().reveal('.footer__copyright', { duration: 1500 , reset: true,distance: "100px"})
+//--------------------------------------------------------
