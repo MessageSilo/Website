@@ -3,21 +3,34 @@ const navToggle = document.querySelector('.mobile-nav-toggle');
 const header = document.querySelector(".primary-header");
 const navLogo = document.querySelector(".navbar-logo");
 const mobilNavLogo = document.querySelector(".mobile-navbar-logo");
+const heroImg = document.querySelector(".hero__right img");
 
-navToggle.addEventListener('click', function() {
+function getDistance(x1, y1, x2, y2) {
+  const xDistance = x2 - x1;
+  const yDistance = y2 - y1;
+  return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
+}
+
+
   
-  const visibility = primaryNav.getAttribute('data-visible');
-
-    if (visibility === 'false') {
-      openMobileNav();
-    }else if(visibility === 'true'){
-      closeMobileNav();
-          
-    }else{
-        throw new Error('Unexpected value for data-visible attribute');
+  document.addEventListener('mousemove', function (e) {
+    if (window.innerWidth < 1024){
+      heroImg.style.transform = `translate(0px, 0px)`;
+      return;
     }
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
 
-});
+    // Adjust the position of the hero right image based on the cursor position
+    const offsetX = 30; // Adjust this value to control the range of movement
+    const offsetY = 30; // Adjust this value to control the range of movement
+
+    const imgX = (mouseX / window.innerWidth) * offsetX;
+    const imgY = (mouseY / window.innerHeight) * offsetY;
+
+    // Apply the new position to the hero right image
+    heroImg.style.transform = `translate(${-imgX}px, ${-imgY}px)`;
+  });
 
 // Close Mobile Nav
 function closeMobileNav(){
